@@ -1,0 +1,7 @@
+<nav>
+  <ul>
+    <li *ngFor="let step of state.steps; let i = index">
+      <a routerLink="#" (click)="state.changeStep(i)" [ngClass]="{'is--active': (state.currentStep$ | async) === i}">{{ step.label }}</a>
+    </li>
+  </ul>
+</nav>
