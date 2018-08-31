@@ -1,11 +1,11 @@
-<div class="card clue">
-  Orte:
-</div>
-
 <agm-map [latitude]="48.507456" [longitude]="7.982612" [zoom]="14">
   <agm-marker
   *ngFor="let ort of orte"
   [latitude]="ort.lat"
-  [longitude]="ort.lang">
+  [longitude]="ort.long">
   </agm-marker>
 </agm-map>
+
+<div class="card clue">
+  Orte:
+</div>

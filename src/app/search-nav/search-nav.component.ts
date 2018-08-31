@@ -17,4 +17,11 @@ export class SearchNavComponent implements OnInit {
   ngOnInit() {
   }
 
+
+  changeStep(index) {
+    if(index === 1) {
+      this.state.changeStep(index);
+    }
+  }
+
 }

@@ -3,8 +3,8 @@
 </div>
 
 <div class="card search-card">
-  <app-search-input [ngClass]="{'is--maps': (state.currentStep$ | async) === 3}"></app-search-input>
-  <app-search-nav *ngIf="(state.currentStep$ | async) !== 3"></app-search-nav>
+  <app-search-input></app-search-input>
+  <app-search-nav></app-search-nav>
 </div>
 
 <app-start *ngIf="(state.currentStep$ | async) === 0"></app-start>
