@@ -19,6 +19,7 @@ import { RiddlesComponent } from './riddles/riddles.component';
 import { EndComponent } from './end/end.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { AlertComponent } from './alert/alert.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { environment } from '../environments/environment';
     HomeComponent,
     RiddlesComponent,
     EndComponent,
+    AlertComponent,
   ],
   imports: [
     BrowserModule,

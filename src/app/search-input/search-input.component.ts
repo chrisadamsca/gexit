@@ -14,6 +14,8 @@ export class SearchInputComponent implements OnInit {
 
   @Input() placeholder = '';
 
+  error = false;
+
   constructor(
     public state: StateService
   ) { }
@@ -30,10 +32,14 @@ export class SearchInputComponent implements OnInit {
     if (this.answer.toLocaleLowerCase().includes(correctAnswer.toLowerCase())) {
       this.state.changeStep(this.state.currentStep$.getValue() + 1);
     } else {
-      alert('Falsche Antwort!');
+      this.error = true;
     }
 
     this.answer = '';
+  }
+
+  tryAgain() {
+    this.error = false;
   }
 
 }

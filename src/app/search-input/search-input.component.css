@@ -41,3 +41,29 @@ svg {
   width: 24px;
   height: 24px;
 }
+
+.alert {
+  position: fixed;
+  z-index: 100;
+  background-color: #fff;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.alert button {
+  padding: 0;
+  margin-top: 1rem;
+  border-radius: 2px;
+  border: 1px solid black;
+  line-height: 40px;
+  text-align: center;
+  width: 200px;
+  color: black;
+  background-color: transparent;
+}
