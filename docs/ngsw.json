@@ -8,7 +8,7 @@
       "updateMode": "prefetch",
       "urls": [
         "/index.html",
-        "/main.cc6813f5ca89a3c1a19c.js",
+        "/main.282b43ecec00d9698cae.js",
         "/polyfills.001f1812942338ddb405.js",
         "/runtime.a66f828dca56eeb90e02.js",
         "/styles.04601a3babc981b2dad1.css"
@@ -62,8 +62,8 @@
     "/assets/images/bild3.jpeg": "4aee84c97586115883b54d2513d89b8e490dad70",
     "/assets/images/bild4.jpeg": "8431a89adc09db99837fba6a6a26c6d56b3ad7b1",
     "/assets/images/googlelogo.png": "41f57a52be2447b7b4ee458887e860a702150396",
-    "/index.html": "0d8bdbaa3fdfa2dc32755aa5dc1781e2415508d3",
-    "/main.cc6813f5ca89a3c1a19c.js": "7e581048684bb477d10e61b91e83bb27655cb37d",
+    "/index.html": "fb3403abf22d6973935ae8398dbccea6b1e88074",
+    "/main.282b43ecec00d9698cae.js": "2dd210dc519752cd111dcc604432b190da9e1cd0",
     "/polyfills.001f1812942338ddb405.js": "8949bb1b1e302dda246f6ed9c2da703270360b1f",
     "/runtime.a66f828dca56eeb90e02.js": "078e320cc6fdaf355836c3b1c52b059cdd33fc7e",
     "/styles.04601a3babc981b2dad1.css": "6fc9ee629116d994e5799b2091e85acce2243314"
