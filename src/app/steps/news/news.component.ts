@@ -62,14 +62,15 @@ export class NewsComponent implements OnInit {
   swipe(index, e) {
 
       const el = this.newscards['_results'][index].nativeElement;
-      const position = el.offsetLeft;
-      console.log(position + 1 + 'px')
-      if (e.velocityX < 0 && position - 2 < (el.clientWidth / 4)) {
-        el.style.left = (position - 2 + e.velocityX) + 'px';
-      }
-      if (e.velocityX > 0 && position + 2 < (el.clientWidth / 4)) {
-        el.style.left = (position + 2 + e.velocityX) + 'px';
-      }
+
+      el.style.transform = "translateX(" + e.deltaX + "px)";
+
+      // if (e.velocityX < 0 && position - 2 < (el.clientWidth / 4)) {
+      //   el.style.left = (position - 2 + e.velocityX) + 'px';
+      // }
+      // if (e.velocityX > 0 && position + 2 < (el.clientWidth / 4)) {
+      //   el.style.left = (position + 2 + e.velocityX) + 'px';
+      // }
 
   }
 
