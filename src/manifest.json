@@ -5,7 +5,7 @@
   "background_color": "#ffffff",
   "display": "standalone",
   "scope": "/",
-  "start_url": "/",
+  "start_url": "https://chrisadamsca.github.io/gexit/",
   "icons": [
     {
       "src": "assets/icons/icon.png",
