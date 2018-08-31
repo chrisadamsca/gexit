@@ -1,0 +1,89 @@
+{
+  "configVersion": 1,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/index.html",
+        "/main.cc6813f5ca89a3c1a19c.js",
+        "/polyfills.001f1812942338ddb405.js",
+        "/runtime.a66f828dca56eeb90e02.js",
+        "/styles.04601a3babc981b2dad1.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/assets/fonts/Roboto-Black.ttf",
+        "/assets/fonts/Roboto-BlackItalic.ttf",
+        "/assets/fonts/Roboto-Bold.ttf",
+        "/assets/fonts/Roboto-BoldItalic.ttf",
+        "/assets/fonts/Roboto-Italic.ttf",
+        "/assets/fonts/Roboto-Light.ttf",
+        "/assets/fonts/Roboto-LightItalic.ttf",
+        "/assets/fonts/Roboto-Medium.ttf",
+        "/assets/fonts/Roboto-MediumItalic.ttf",
+        "/assets/fonts/Roboto-Regular.ttf",
+        "/assets/fonts/Roboto-Thin.ttf",
+        "/assets/fonts/Roboto-ThinItalic.ttf",
+        "/assets/icons/icon.png",
+        "/assets/images/bild1.jpeg",
+        "/assets/images/bild2.jpeg",
+        "/assets/images/bild3.jpeg",
+        "/assets/images/bild4.jpeg",
+        "/assets/images/googlelogo.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/assets/fonts/Roboto-Black.ttf": "c572416b9587c40d49ea60c7128f7f17b9317ad8",
+    "/assets/fonts/Roboto-BlackItalic.ttf": "6c8acc36bbdf17bcd6a33756aa42e2557bb3f805",
+    "/assets/fonts/Roboto-Bold.ttf": "0ce37ced9c5fcac9bdc452a432c1258870ba4677",
+    "/assets/fonts/Roboto-BoldItalic.ttf": "8cd79e47ed8a9f9ea79ffa186852ad7cbad5687f",
+    "/assets/fonts/Roboto-Italic.ttf": "0213e38dffde2a0a5672d84fb62c6aa994e38c3b",
+    "/assets/fonts/Roboto-Light.ttf": "73a2bb2d6e591a90ffb4ed118a3989fb17b54c7b",
+    "/assets/fonts/Roboto-LightItalic.ttf": "037ef2bf307642203858dd252fc46eb400684f02",
+    "/assets/fonts/Roboto-Medium.ttf": "5f16f4d6dbb4a4f12d8ae96488ac209bb49762a5",
+    "/assets/fonts/Roboto-MediumItalic.ttf": "cab617eccf6db0396675ec9c42e747a4738f059f",
+    "/assets/fonts/Roboto-Regular.ttf": "dd1b1db13ff1f72138c134c62f38fef83749f36a",
+    "/assets/fonts/Roboto-Thin.ttf": "9514ad7aee341594f43a33893f0b3d8a6d81f32e",
+    "/assets/fonts/Roboto-ThinItalic.ttf": "c9297d2166618da2b66a06bacfcbd50b68581e6f",
+    "/assets/icons/icon.png": "849dd3773bd61a4e5bba6fc0cb546bff254da0b7",
+    "/assets/images/bild1.jpeg": "1a3424fdada4838c3f43387645be44525632e089",
+    "/assets/images/bild2.jpeg": "72f7655d70eb4e2a1df585b82a0102c8258e87ae",
+    "/assets/images/bild3.jpeg": "4aee84c97586115883b54d2513d89b8e490dad70",
+    "/assets/images/bild4.jpeg": "8431a89adc09db99837fba6a6a26c6d56b3ad7b1",
+    "/assets/images/googlelogo.png": "41f57a52be2447b7b4ee458887e860a702150396",
+    "/index.html": "0d8bdbaa3fdfa2dc32755aa5dc1781e2415508d3",
+    "/main.cc6813f5ca89a3c1a19c.js": "7e581048684bb477d10e61b91e83bb27655cb37d",
+    "/polyfills.001f1812942338ddb405.js": "8949bb1b1e302dda246f6ed9c2da703270360b1f",
+    "/runtime.a66f828dca56eeb90e02.js": "078e320cc6fdaf355836c3b1c52b059cdd33fc7e",
+    "/styles.04601a3babc981b2dad1.css": "6fc9ee629116d994e5799b2091e85acce2243314"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
