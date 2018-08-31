@@ -1,3 +1,4 @@
+import { StateService } from './../../state.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -65,7 +66,9 @@ export class MapsComponent implements OnInit {
     }
   ]
 
-  constructor() { }
+  constructor(
+    public state: StateService
+  ) { }
 
   ngOnInit() {
   }

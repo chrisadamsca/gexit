@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs/BehaviorSubject';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable()
 export class StateService {
@@ -7,30 +7,23 @@ export class StateService {
   steps = [
     {
       label: 'Alle',
-      text: 'Huhu Silvana, heute ist ein toller Tag! Viel Spiel, Spaß und Freude warten auf dich.  Um nun herauszufinden wo es als nächstes hingeht, musst du zuvor noch drei Rätsel lösen. Dabei kannst du jederzeit auf die Hilfe deiner Mädels zurückgreifen, falls du einmal nicht weißer weißt. Schau dir doch zuerst einmal die Bilder an :)',
+      text: '',
       answer: null
     },
     {
       label: 'Bilder',
-      text: '4 in 1',
+      text: 'Was haben all diese gemeinsam?',
       answer: 'Nest'
     },
     {
       label: 'News',
-      text: 'Wahrheit oder Fake News?',
-      answer: 'Penis'
+      text: 'Ist die Schlagzeile echt ⟶ oder ⟵ fake?',
+      answer: 'Landhaus'
     },
     {
       label: 'Maps',
       text: '',
-      orte: [
-        {
-          label: 'Anusland',
-          lat: 123,
-          lang: 321
-        }
-      ],
-      answer: 'Nest'
+      answer: 'Entspannung'
     },
     {
       label: null,

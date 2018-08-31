@@ -1,5 +1,5 @@
 import { StateService } from './../state.service';
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-search-input',
@@ -7,6 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./search-input.component.css']
 })
 export class SearchInputComponent implements OnInit {
+
+  @ViewChild('SearchInput') searchInput: ElementRef;
 
   answer: string = '';
 
@@ -19,9 +21,13 @@ export class SearchInputComponent implements OnInit {
   ngOnInit() {
   }
 
-  validateAnswer() {
+  validateAnswer(e) {
+    e.preventDefault();
+
+    this.searchInput.nativeElement.blur();
+
     const correctAnswer = this.state.steps[this.state.currentStep$.getValue()].answer;
-    if (this.answer.toLocaleLowerCase() === correctAnswer.toLowerCase()) {
+    if (this.answer.toLocaleLowerCase().includes(correctAnswer.toLowerCase())) {
       this.state.changeStep(this.state.currentStep$.getValue() + 1);
     } else {
       alert('Falsche Antwort!');

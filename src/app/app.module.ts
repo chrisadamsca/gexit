@@ -17,6 +17,8 @@ import { AppRoutingModule } from './/app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { RiddlesComponent } from './riddles/riddles.component';
 import { EndComponent } from './end/end.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,8 @@ import { EndComponent } from './end/end.component';
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyAhaN61-FWXh7ZQ67D5DwYEjLPmh_W47wE'
     }),
-    AppRoutingModule
+    AppRoutingModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [
     StateService
