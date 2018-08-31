@@ -7,6 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BilderComponent implements OnInit {
 
+  bilder = [
+    {
+      image: 'bild1.jpeg',
+    },
+    {
+      image: 'bild2.jpeg',
+    },
+    {
+      image: 'bild3.jpeg',
+    },
+    {
+      image: 'bild4.jpeg',
+    }
+  ]
+
   constructor() { }
 
   ngOnInit() {

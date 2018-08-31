@@ -1,5 +1,22 @@
 :host {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
   width: 100%;
+}
+
+.logo {
+  width: 90%;
+  max-width: 160px;
+  margin-bottom: 25px;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .search-input {
@@ -12,20 +29,22 @@ input {
   flex: 1;
   display: flex;
   padding: 7px 0 6px;
-  border: none;
-  /* border: 1px solid #d9d9d9; */
-  border-bottom: 1px solid #d9d9d9;
+  border: 1px solid #d9d9d9;
   border-right: 0;
   border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
   height: 40px;
   padding-left: 16px;
   flex-grow: 1;
   font-size: 18px;
+  outline: none;
 }
 
 button {
   border-radius: 0;
+  outline: none;
   -webkit-border-top-right-radius: 8px;
+  -webkit-border-bottom-right-radius: 8px;
   height: 40px;
   width: 40px;
   background-color: #3b78e7;

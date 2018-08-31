@@ -7,7 +7,7 @@ export class StateService {
   steps = [
     {
       label: 'Alle',
-      text: 'Hallo Silvana, ...',
+      text: 'Huhu Silvana, heute ist ein toller Tag! Viel Spiel, Spaß und Freude warten auf dich.  Um nun herauszufinden wo es als nächstes hingeht, musst du zuvor noch drei Rätsel lösen. Dabei kannst du jederzeit auf die Hilfe deiner Mädels zurückgreifen, falls du einmal nicht weißer weißt. Schau dir doch zuerst einmal die Bilder an :)',
       answer: null
     },
     {
@@ -31,6 +31,11 @@ export class StateService {
         }
       ],
       answer: 'Nest'
+    },
+    {
+      label: null,
+      text: null,
+      answer: null
     }
   ];
 

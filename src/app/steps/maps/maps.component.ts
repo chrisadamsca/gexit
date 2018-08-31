@@ -7,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MapsComponent implements OnInit {
 
+  orte = [
+    {
+      name: 'Ebersweier',
+      lat: 48.507456,
+      lang: 7.982612
+    }
+  ]
+
   constructor() { }
 
   ngOnInit() {

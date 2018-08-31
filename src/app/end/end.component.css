@@ -1,0 +1,35 @@
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.title {
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 1px;
+  margin-bottom: -1px;
+  color: #1967D2;
+}
+
+.breadcrumbs {
+  font-size: 14px;
+  line-height: 20px;
+  color: #006621;
+  white-space: nowrap;
+  padding-bottom: 12px;
+}
+
+hr {
+  border: 0;
+  border-bottom: 1px solid #DFE1E5;
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.desc {
+  padding-top: 12px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #3C4043;
+}

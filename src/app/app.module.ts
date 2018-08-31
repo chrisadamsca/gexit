@@ -11,7 +11,12 @@ import { NewsComponent } from './steps/news/news.component';
 import { StartComponent } from './steps/start/start.component';
 
 import { AgmCoreModule } from '@agm/core';
+
 import { MapsComponent } from './steps/maps/maps.component';
+import { AppRoutingModule } from './/app-routing.module';
+import { HomeComponent } from './home/home.component';
+import { RiddlesComponent } from './riddles/riddles.component';
+import { EndComponent } from './end/end.component';
 
 @NgModule({
   declarations: [
@@ -22,13 +27,17 @@ import { MapsComponent } from './steps/maps/maps.component';
     NewsComponent,
     StartComponent,
     MapsComponent,
+    HomeComponent,
+    RiddlesComponent,
+    EndComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AgmCoreModule.forRoot({
-      apiKey: 'YOUR_KEY'
-    })
+      apiKey: 'AIzaSyAhaN61-FWXh7ZQ67D5DwYEjLPmh_W47wE'
+    }),
+    AppRoutingModule
   ],
   providers: [
     StateService

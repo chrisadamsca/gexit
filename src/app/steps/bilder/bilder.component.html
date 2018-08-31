@@ -1,9 +1,8 @@
 <div class="card clue">
   Was haben diese Bilder gemeinsam?
 </div>
-<div class="card">
-  <img src="https://via.placeholder.com/400x300" alt="">
-  <img src="https://via.placeholder.com/400x300" alt="">
-  <img src="https://via.placeholder.com/400x300" alt="">
-  <img src="https://via.placeholder.com/400x300" alt="">
+<div class="img-container">
+  <div class="img-item" *ngFor="let bild of bilder">
+      <img src="{{'../../../assets/images/' + bild.image}}" alt="">
+  </div>
 </div>

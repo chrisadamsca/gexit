@@ -2,6 +2,10 @@
   Orte:
 </div>
 
-<agm-map [latitude]="10" [longitude]="10">
-  <agm-marker [latitude]="10.01" [longitude]="10.01"></agm-marker>
+<agm-map [latitude]="48.507456" [longitude]="7.982612" [zoom]="14">
+  <agm-marker
+  *ngFor="let ort of orte"
+  [latitude]="ort.lat"
+  [longitude]="ort.lang">
+  </agm-marker>
 </agm-map>

@@ -1,8 +1,2 @@
-<app-search-input></app-search-input>
 
-<app-search-nav></app-search-nav>
-
-<app-start *ngIf="(state.currentStep$ | async) === 0"></app-start>
-<app-bilder *ngIf="(state.currentStep$ | async) === 1"></app-bilder>
-<app-news *ngIf="(state.currentStep$ | async) === 2"></app-news>
-<app-maps *ngIf="(state.currentStep$ | async) === 3"></app-maps>
+<router-outlet></router-outlet>
