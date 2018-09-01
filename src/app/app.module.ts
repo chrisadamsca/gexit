@@ -21,6 +21,21 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { AlertComponent } from './alert/alert.component';
 
+import * as Hammer from 'hammerjs';
+import { HammerGestureConfig, HAMMER_GESTURE_CONFIG } from '@angular/platform-browser';
+
+export class MyHammerConfig extends HammerGestureConfig  {
+  overrides = <any>{
+      // override hammerjs default configuration
+      'pan': {
+        direction: Hammer.DIRECTION_HORIZONTAL,
+        threshold: 10
+      },
+      'pinch': { enable: false },
+      'rotate': { enable: false }
+  }
+}
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,7 +60,11 @@ import { AlertComponent } from './alert/alert.component';
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [
-    StateService
+    StateService,
+    {
+      provide: HAMMER_GESTURE_CONFIG,
+      useClass: MyHammerConfig
+    }
   ],
   bootstrap: [AppComponent]
 })

@@ -13,7 +13,8 @@
   </div>
   <div class="news-info card"
   #NewsCard
-  (panmove)="swipe(i, $event)">
+  (panmove)="swipe(i, $event)"
+  (panend)="swipe(i, $event)">
       <h3>{{ card.title }}</h3>
   </div>
 
